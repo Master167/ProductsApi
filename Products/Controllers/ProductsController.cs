@@ -24,6 +24,7 @@ namespace Products.Controllers
         }
 
         // GET: api/Products
+        // Adding comment to make Git update for Docker items.
         [HttpGet]
         public IEnumerable<Product> GetProducts()
         {
