@@ -14,6 +14,7 @@ RUN dotnet build "Products.csproj" -c Release -o /app
 FROM build AS publish
 RUN dotnet publish "Products.csproj" -c Release -o /app
 
+# This is a comment in the docker file
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
